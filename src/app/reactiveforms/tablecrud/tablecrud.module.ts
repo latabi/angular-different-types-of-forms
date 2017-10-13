@@ -1,6 +1,6 @@
 import { TablecrudComponent } from './tablecrud.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/Forms';
-import { DirectivesComponent } from './directives.component';
+
 
 import { NgModule } from '@angular/core';
 
