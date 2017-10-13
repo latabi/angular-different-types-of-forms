@@ -1,19 +1,20 @@
+import { ServiceService } from './../../service/service.service';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { Observable } from 'rxjs/Observable';
-import { Response } from '@angular/http';
-import { student } from './../directives/student';
-import { ServiceService } from './../service/service.service';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/Forms';
+
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { FormBuilder, Validators, FormGroup } from "@angular/Forms";
-import { BsModalRef, BsModalService } from "ngx-bootstrap/modal";
-import { FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'reactiveforms',
-  templateUrl: './reactiveforms.component.html',
-  styleUrls: ['./reactiveforms.component.css']
+  selector: 'tablecrud',
+  templateUrl: './tablecrud.component.html',
+  styleUrls: ['./tablecrud.component.css']
 })
-export class ReactiveformsComponent implements OnInit {
-    res: any;
+export class TablecrudComponent implements OnInit {
+
+
+  
+ res: any;
   
     id: number;
    
@@ -159,3 +160,11 @@ delete(model)
 
 
 }
+
+
+
+
+
+
+
+
